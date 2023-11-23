@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Exchange Management News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        nav {
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 10px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .article {
+            margin: 20px 0;
+        }
+
+        /* Scroll-to-top button */
+        #scrollToTop {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Stock Exchange Management News</h1>
+        <nav>
+            <a href="#latest-news">Latest News</a>
+            <a href="#analysis">Market Analysis</a>
+            <a href="#tips">Investment Tips</a>
+        </nav>
+    </header>
+
+    <div class="container" id="latest-news">
+        <h2>Latest News</h2>
+        <div class="article">
+            <h3>Article Title 1</h3>
+            <p>Summary of the first news article.</p>
+            <a href="article1.html">Read more</a>
+        </div>
+        <div class="article">
+            <h3>Article Title 2</h3>
+            <p>Summary of the second news article.</p>
+            <a href="article2.html">Read more</a>
+        </div>
+        <div class="article">
+            <h3>Article Title 3</h3>
+            <p>Summary of the third news article.</p>
+            <a href="article3.html">Read more</a>
+        </div>
+        <!-- Add more news articles as needed -->
+    </div>
+
+    <div class="container" id="analysis">
+        <h2>Market Analysis</h2>
+        <div class="article">
+            <h3>Market Analysis 1</h3>
+            <p>Summary of the first market analysis.</p>
+            <a href="analysis1.html">Read more</a>
+        </div>
+        <div class="article">
+            <h3>Market Analysis 2</h3>
+            <p>Summary of the second market analysis.</p>
+            <a href="analysis2.html">Read more</a>
+        </div>
+        <div class="article">
+            <h3>Market Analysis 3</h3>
+            <p>Summary of the third market analysis.</p>
+            <a href="analysis3.html">Read more</a>
+        </div>
+        <!-- Add more market analysis articles as needed -->
+    </div>
+
+    <div class="container" id="tips">
+        <h2>Investment Tips</h2>
+        <div class="article">
+            <h3>Investment Tip 1</h3>
+            <p>Summary of the first investment tip.</p>
+            <a href="tip1.html">Read more</a>
+        </div>
+        <div class="article">
+            <h3>Investment Tip 2</h3>
+            <p>Summary of the second investment tip.</p>
+            <a href="tip2.html">Read more</a>
+        </div>
+        <div class="article">
+            <h3>Investment Tip 3</h3>
+            <p>Summary of the third investment tip.</p>
+            <a href="tip3.html">Read more</a>
+        </div>
+        <!-- Add more investment tips as needed -->
+    </div>
+
+    <!-- Scroll-to-top button -->
+    <button id="scrollToTop" onclick="scrollToTop()">Scroll to Top</button>
+
+    <script>
+        // Show/hide scroll-to-top button
+        window.onscroll = function () {
+            showScrollButton();
+        };
+
+        function showScrollButton() {
+            var button = document.getElementById("scrollToTop");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        }
+
+        // Scroll to top function
+        function scrollToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
+</html>
